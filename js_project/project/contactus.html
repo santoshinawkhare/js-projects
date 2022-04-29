@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>contact us</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+            integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
+            crossorigin="anonymous"/>
+        <style>
+            .sty {
+                background-image: url(123.jpeg);
+                background-size: cover;
+            }
+            .a {
+                position: absolute;
+                width: 848px;
+                height: 212px;
+                left: 34px;
+                top: 40px;
+                font-family: Roboto;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 45px;
+                line-height: 0px;
+                display: flex;
+                color: #FFFFFF
+;
+                text-shadow: 10px 10px 4px rgba(0, 0, 0, 0.3);
+            }
+            .d {
+                position: absolute;
+                width: 130px;
+                height: 46px;
+                left: 1120px;
+                top: 16px;
+                font-family: Roboto;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 20px;
+                line-height: 35px;
+                color: #FFFFFF
+;
+            }
+            .e {
+                position: absolute;
+                width: 162px;
+                height: 46px;
+                left: 1128px;
+                top: 16px;
+                font-family: Roboto;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 20px;
+                line-height: 35px;
+                color: #FFFFFF
+;
+            }
+            .f {
+                position: absolute;
+                width: 130px;
+                height: 46px;
+                left: 989px;
+                top: 16px;
+                font-family: Roboto;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 20px;
+                line-height: 35px;
+                color: #FFFFFF
+;
+            }
+            .text {
+                position: absolute;
+                width: 460px;
+                height: 62px;
+                left: 305px;
+                top: 127px;
+                font-family: Roboto;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 40px;
+                line-height: 0px;
+                color: #FFFFFF
+;
+            }
+            .div1{
+                position: absolute;
+                width: 769px;
+                height: 471px;
+                left: 86px;
+                top: 185px;
+                background: rgba(255, 255, 255, 0.14);
+                border-radius: 88px;
+            }
+            .sign{
+                position: absolute;
+                width: 188px;
+                height: 48px;
+                left: 50px;
+                top: 50px;
+                font-family: Roboto;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 30px;
+                line-height: 0px;
+                color: #FFFFFF
+;
+            }
+            .div2{
+                position: absolute;
+                width: 532px;
+                height: 64px;
+                left: 50px;
+                top: 8px;
+            }
+            .name{
+                font-family: Roboto;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 22spx;
+                color: #FFFFFF
+;
+            }
+            .input{
+                width: 405px;
+            }
+            .div3{
+                position: absolute;
+                width: 400px;
+                height: 56px;
+                left: 252px;
+                top: 378px;
+            }
+            .btn-primary{
+                margin: 14px;
+                border-radius: 30px;
+                width: 144px;
+                height: 43px;
+                font-weight: bold;
+                font-size: 20px;
+            }
+            img {
+                position: absolute;
+                width: 226px;
+                height: 132px;
+                left: 523px;
+                top: 101px;
+                border-radius: 88px;
+           }
+        </style>
+    </head>
+    <body class="sty">
+        <h1 class="a">MEDICAL STORE MANAGEMENT</h1>
+        <a href="Homepage.html" class="btn f" role="button">Home</a>
+        <a href="Aboutuspage.html" class="btn d" role="button">About Us</a>
+        <a href="loginpage.html" class="btn h" role="button">Log Out</a>
+       
+        <h3 class="text">Contact Us</h2>
+        <div class="div1">
+            <img class="img" src="contact us.jpeg" alt="contact us img">
+            <div class="div2">
+            <label for="name" class="name">Name &nbsp;</label><br>
+            <input type="text" id="name" name="name" class="input" required>
+            <br>
+            <label for="email" class="name">Email &nbsp;</label><br>
+            <input type="text" id="email" name="email" class="input" required> 
+            <br>
+            <label for="phone" class="name">Phone No &nbsp;</label><br>
+            <input type="number" id="pn" name="pn" class="input" required> 
+            <br>
+            <label for="sub" class="name">Subject &nbsp;</label><br>
+            <input type="text" id="sub" name="sub" class="input" required> 
+            <br>
+            <label for="msg" class="name">Message &nbsp;</label><br>
+            <textarea type="text" id="msg" name="msg" class="input" required></textarea> 
+            </div>
+            <div class="div3">
+            <button type="button" class="btn btn-primary" onclick="submit()">Submit</button>
+            <button type="button" class="btn btn-primary" onclick="reset()">Reset Form</button>
+            </div>
+        </div>
+        <script>
+            function submit(){
+                    alert("Are you sure submit form");
+                     document.getElementById("name").value="";
+                     document.getElementById("email").value="";
+                     document.getElementById("pn").value="";
+                     document.getElementById("sub").value="";
+                     document.getElementById("msg").value="";
+                  }
+            
+                  function reset(){
+                    alert("would like to reset the form");
+                     document.getElementById("name").value="";
+                     document.getElementById("email").value="";
+                     document.getElementById("pn").value="";
+                     document.getElementById("sub").value="";
+                     document.getElementById("msg").value="";
+                  }
+        </script>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+        </body>
+    </html>
